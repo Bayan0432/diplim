@@ -1,0 +1,10 @@
+::-webkit-scrollbar {
+  width: 9px; /* ширина для вертикального скролла */
+  height: auto; /* высота для горизонтального скролла */
+  background-color: #361c73;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #7031cd;
+  border-radius: 10px;
+}
