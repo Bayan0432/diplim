@@ -93,20 +93,20 @@
 						<p class="section-header__subtitle power__suptitle">Приветствуем вас в нашем юридическом центре!Мы - команда высококвалифицированных юристов, готовых оказать вам качественную правовую поддержку в различных сферах.Более 5 лет наш юридический центр занимается оказанием услуг.</p>
 					</div>
 
-					<form id="myForm" class="power__forma forma" action="#" method="post">
-						<div class="input__wrapper">
-							<input id="nameInput" class="power__input forma__input" type="text" placeholder="Имя" required>
+					<form id="myForm"  action="#" method="post">
+						<div class="power__forma forma">
+							<div class="input__wrapper">
+								<input id="nameInput" class="power__input forma__input" type="text" placeholder="Имя" required>
+							</div>
+							<div class="input__wrapper">
+								<input id="emailInput" class="power__input forma__input" type="email" placeholder="Email" required>
+							</div>
+							<div class="input__wrapper">
+								<input id="phoneInput" class="power__input forma__input" type="tel" placeholder="Телефон" required>
+							</div>
 						</div>
-						<div class="input__wrapper">
-							<input id="emailInput" class="power__input forma__input" type="email" placeholder="Email" required>
-						</div>
-						<div class="input__wrapper">
-							<input id="phoneInput" class="power__input forma__input" type="tel" placeholder="Телефон" required>
-						</div>
-						<div id="successMessage" style="display: none;">Данные успешно отправлены</div>
+						<button id="submitButton" class="forma__button button" type="submit">Отправить</button>
 					</form>
-
-					<button id="submitButton" class="forma__button button" type="submit">Отправить</button>
 						
 					<ul class="power-available__list">
 						<li class="power-available__item">
@@ -123,12 +123,12 @@
 				</div>
 			</div>
 
-			<!--<div class="power__pictures-wrapper">
+			<div class="power__pictures-wrapper">
 				
 				<img class="power__triangle" src="pictures/icons/triangle-icon.png" alt="Triangle">
 				<img class="power__cubeTwo" src="pictures/icons/cube-icon.svg" alt="Cube">
 
-				<div class="power__interesting">
+				<!--<div class="power__interesting">
 					<img class="power__interesting-foto" src="pictures/illustration/margaret-philips-foto.png" width="153" height="233" alt="Margaret Philips foto">
 
 					<div class="power__interesting-content">
