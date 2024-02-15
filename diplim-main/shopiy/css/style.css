@@ -433,28 +433,30 @@ body{
 	position: absolute;
 }
 
-.power__triangle{
-	position: absolute;
-	top: 5%;
-  left: -20px;
-  filter: blur(2px);
+.power__triangle {
+    position: absolute;
+    top: 5%;
+    left: -20px;
+    filter: blur(2px);
 
-  animation-name: triangle-shake;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
+    animation-name: triangle-shake;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
 }
 
-@keyframes triangle-shake{
-	0%{
-		top: 5%;
-	}
-	50%{
-		top: 3%;
-	}
-	100%{
-		top: 5%;
-	}
+@keyframes triangle-shake {
+    0% {
+        top: 5%;
+    }
+    50% {
+        top: 3%;
+        transform: rotate(100deg);
+    }
+    100% {
+        top: 5%;
+    }
 }
+
 
 .power__cubeTwo{
 	position: absolute;
@@ -464,20 +466,21 @@ body{
   filter: blur(1px);
 
   animation-name: cubeTwo-shake;
-  animation-duration: 3s;
+  animation-duration: 30s;
   animation-iteration-count: infinite;
 }
 
 @keyframes cubeTwo-shake{
-	0%{
-		bottom: 0%;
+	0% {
+		bottom: 5%;
 	}
-	50%{
+	
+	50% {
 		bottom: 3%;
-		transform: rotate(5deg);
+		transform: rotate(500deg);
 	}
-	100%{
-		bottom: 0%;
+	100% {
+		bottom: 5%;
 	}
 }
 
