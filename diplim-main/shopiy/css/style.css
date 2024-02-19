@@ -2089,3 +2089,19 @@ body{
     margin-right: 25px;
 	}
 }
+
+
+.svyaz_mess{
+	display: block;
+    padding-left: 20%;
+	padding-bottom: 20%;
+}
+
+.messen{
+	padding-left: 5px;
+}
+
+.zagolovok>p{
+	font-size: 20px;
+	padding-top: 20%;
+}
