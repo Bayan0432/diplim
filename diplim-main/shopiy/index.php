@@ -93,7 +93,27 @@
 						<p class="section-header__subtitle power__suptitle">Приветствуем вас в нашем юридическом центре!Мы - команда высококвалифицированных юристов, готовых оказать вам качественную правовую поддержку в различных сферах.Более 5 лет наш юридический центр занимается оказанием услуг.</p>
 					</div>
 
-					<form id="myForm"  action="#" method="post">
+					<div class="svyaz_mess">
+
+						<a href="#" class="messen">
+							<img src="pictures/icons/email.png" alt="" >
+						</a>
+						
+						<a href="#" class="messen" >
+							<img src="pictures/icons/whatsapp.png" alt="" >
+						</a>
+						
+						<a href="#" class="messen" >
+							<img src="pictures/icons/телеграмм.png" alt="" >
+						</a>
+						<div class="zagolovok">
+							<p>Вы можете связаться с нами </p>
+						</div>
+					</div>
+
+
+
+					<!--<form id="myForm"  action="#" method="post">
 						<div class="power__forma forma">
 							<div class="input__wrapper">
 								<input id="nameInput" class="power__input forma__input" type="text" placeholder="Имя" required>
@@ -106,7 +126,9 @@
 							</div>
 						</div>
 						<button id="submitButton" class="forma__button button" type="submit">Отправить</button>
-					</form>
+					</form>-->
+
+					
 						
 					<ul class="power-available__list">
 						<li class="power-available__item">
@@ -128,31 +150,7 @@
 				<img class="power__triangle" src="pictures/icons/triangle-icon.png" alt="Triangle">
 				<img class="power__cubeTwo" src="pictures/icons/cube-icon.svg" alt="Cube">
 
-				<!--<div class="power__interesting">
-					<img class="power__interesting-foto" src="pictures/illustration/margaret-philips-foto.png" width="153" height="233" alt="Margaret Philips foto">
-
-					<div class="power__interesting-content">
-						<div class="power__interesting-text">
-							 <h3 class="power__interesting-name">Margaret Philips</h3>
-							 <p class="power__interesting-suptitle">Watch our best services</p>
-						 </div>
-
-						 <a class="power__play-video" href="#">
-							 <img src="pictures/icons/play-icon.png" width="45" height="45" alt="Play button">
-						 </a>
-					</div>
-
-				</div>
-
-				<div class="power__progress">
-					<img class="power__progress-icon" src="pictures/icons/make-progress-icon.png" alt="Make progress">
-					<h3 class="progress__subject">Make Progress</h3>
-					<p class="progress__suptitle">with opening plans</p>
-
-					<a class="progress__button" href="#">Buy Plan</a>
-				</div>
-
-			</div> -->
+			</div>
 		</section>
 
 		<section class="build container">
@@ -223,49 +221,6 @@
 					</a>
 				</div>
 			</div>
-
-
-
-
-
-
-
-
-
-
-
-
-			<!--<div class="section-header section-header-wedo">
-				<p class="section-header__suptitle wedo__suptitle">Наши услуги</p>
-				<h2 class="section-header__subject wedo__subject">Our creative process for your business</h2>
-				<p class="section-header__subtitle wedo__suptitle">As our motto, we always provide the best service especially for you and your company by growing your company to be better.</p>
-			</div>
-
-			<ul class="wedo__list">
-				<li class="wedo__item">
-					<img class="wedo__icon" src="pictures/icons/grow-trafic-icon.png" width="73" height="66" alt="Grow your traffic">
-					<h3 class="wedo__item-subject">Grow your traffic</h3>
-					<p class="wedo__suptitle">We always help your company to grow with us.</p>
-				</li>
-
-				<li class="wedo__item">
-					<img class="wedo__icon" src="pictures/icons/content-icon.png" width="73" height="66" alt="Grow your traffic">
-					<h3 class="wedo__item-subject">Content for sales</h3>
-					<p class="wedo__suptitle">Every company that we handel. We always content more sales.</p>
-				</li>
-
-				<li class="wedo__item">
-					<img class="wedo__icon" src="pictures/icons/reporting-icon.png" width="73" height="66" alt="Grow your traffic">
-					<h3 class="wedo__item-subject">Reporting & analytics</h3>
-					<p class="wedo__suptitle">Lorem ipsum dolor sit amet, consectetur adipiscing</p>
-				</li>
-
-				<li class="wedo__item">
-					<img class="wedo__icon" src="pictures/icons/better-icon.png" width="73" height="66" alt="Grow your traffic">
-					<h3 class="wedo__item-subject">Better Conversion</h3>
-					<p class="wedo__suptitle">We always help your company to grow with us.</p>
-				</li>
-			</ul> -->
 		</section>
 
 		<section class="product container">
@@ -356,40 +311,6 @@
 
 		</section>
 
-
-
-
-
-
-
-
-
-
-
-
-		<!--<section class="out-perfom container">
-			<div class="section-header section-header__out-perfom">
-				<p class="section-header__suptitle out-perfom__suptitle">CREATIVE PROCESS</p>
-				<h2 class="section-header__subject out-perfom__subject">Know your ads <br> inside & out-perform</h2>
-				<p class="section-header__subtitle out-perfom__suptitle">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
-			</div>
-			<div class="out-perfom__pictures-wrapper">
-				<img class="out-perfom__foto" src="pictures/illustration/mean-foto-2.png" alt="Man holding a tablet">
-			</div>
-		</section>
-
-		<section class="contact container">
-			<h2 class="contact__subject">Связатся с нами</h2>
-			<p class="contact__suptitle">На нашем счету более 1000 консультаций</p>
-
-			<form class="contact__forma forma" action="#" method="post">
-						<div class="input__wrapper">
-							<input class="contact__input forma__input" type="text" placeholder="Type your messages..">
-						</div>
-
-				<button class="forma__button button" type="button">Отправить</button>
-			</form>
-		</section>-->
 	</main>
 
 	<footer class="footer">
