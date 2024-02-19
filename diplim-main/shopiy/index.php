@@ -91,43 +91,181 @@
 						<p class="section-header__suptitle power__garante">100% Сертифицированные услуги</p>
 						<h1 class="section-header__subject power__subject">Окажем юридические услуги</h1>
 						<p class="section-header__subtitle power__suptitle">Приветствуем вас в нашем юридическом центре!Мы - команда высококвалифицированных юристов, готовых оказать вам качественную правовую поддержку в различных сферах.Более 5 лет наш юридический центр занимается оказанием услуг.</p>
+				
 					</div>
 
-					<div class="svyaz_mess">
+				<div>
+						<div class="svyaz_mess">
+						<div>
+							<button  id="myBtn1"><img src="pictures/icons/email.png" alt=""></button>
 
-						<a href="#" class="messen">
-							<img src="pictures/icons/email.png" alt="" >
-						</a>
-						
-						<a href="#" class="messen" >
-							<img src="pictures/icons/whatsapp.png" alt="" >
-						</a>
-						
-						<a href="#" class="messen" >
-							<img src="pictures/icons/телеграмм.png" alt="" >
-						</a>
-						<div class="zagolovok">
-							<p>Вы можете связаться с нами </p>
+
+							<div id="myModa1" class="modal">
+								<div class="modal-content">
+									<div class="modal-header">
+										<span id="close" class="close">&times;</span>
+									</div>
+									<div class="modal-body">
+										<form id="myForm"  action="#" method="post">
+											<div class="power__forma forma">
+												<div class="input__wrapper">
+													<input id="nameInput" class="power__input forma__input" type="text" placeholder="Имя" required>
+												</div>
+												<div class="input__wrapper">
+													<input id="emailInput" class="power__input forma__input" type="email" placeholder="Email" required>
+												</div>
+												
+											</div>
+										</form>
+									</div>
+									<div class="modal-footer">
+										<button id="submitButton" class="forma__button button" type="submit">Отправить</button>
+									</div>
+									
+								</div>
+								
+							</div>
+								
 						</div>
+						<div>
+							<button  id="myBtn2"><img src="pictures/icons/whatsapp.png" alt=""></button>
+
+
+							<div id="myModa2" class="modal">
+								<div class="modal-content">
+									<div class="modal-header">
+										<span class="close">&times;</span>
+									</div>
+									<div class="modal-body">
+										<form id="myForm"  action="#" method="post">
+											<div class="power__forma forma">
+												<div class="input__wrapper">
+													<input id="nameInput" class="power__input forma__input" type="text" placeholder="Имя" required>
+												</div>
+												<div class="input__wrapper">
+													<input id="phoneInput" class="power__input forma__input" type="tel" placeholder="Телефон" required>
+												</div>
+												
+											</div>
+										</form>
+									</div>
+									<div class="modal-footer">
+										<button id="submitButton" class="forma__button button" type="submit">Отправить</button>
+									</div>
+									
+								</div>
+								
+							</div>
+					
+						</div>
+						<div>
+							<button  id="myBtn3"><img src="pictures/icons/телеграмм.png" alt=""></button>
+
+
+							<div id="myModa3" class="modal">
+								<div class="modal-content">
+									<div class="modal-header">
+										<span class="close">&times;</span>
+									</div>
+									<div class="modal-body">
+										<form id="myForm"  action="#" method="post">
+											<div class="power__forma forma">
+												<div class="input__wrapper">
+													<input id="nameInput" class="power__input forma__input" type="text" placeholder="Имя" required>
+												</div>
+												<div class="input__wrapper">
+													<input id="phoneInput" class="power__input forma__input" type="tel" placeholder="Телефон" required>
+												</div>
+												
+											</div>
+										</form>
+									</div>
+									<div class="modal-footer">
+										<button id="submitButton" class="forma__button button" type="submit">Отправить</button>
+									</div>
+									
+								</div>
+								
+								
+							</div>
+								
+						</div>
+						
+						<script>
+							// Получаем ссылки на модальные окна
+							var modal1 = document.getElementById('myModa1');
+							var modal2 = document.getElementById('myModa2');
+							var modal3 = document.getElementById('myModa3');
+
+							// Получаем ссылки на кнопки
+							var btn1 = document.getElementById("myBtn1");
+							var btn2 = document.getElementById("myBtn2");
+							var btn3 = document.getElementById("myBtn3");
+
+							// Получаем ссылку на элементы закрытия модальных окон
+							var closeButtons1 = document.querySelectorAll("#myModa1 .close");
+							var closeButtons2 = document.querySelectorAll("#myModa2 .close");
+							var closeButtons3 = document.querySelectorAll("#myModa3 .close");
+
+							// Функция для открытия модального окна
+							function openModal(modal) {
+								modal.style.display = "block";
+							}
+
+							// Функция для закрытия модального окна
+							function closeModal(modal) {
+								modal.style.display = "none";
+							}
+
+							// Установка обработчиков событий для каждой кнопки
+							btn1.onclick = function() {
+								openModal(modal1);
+							};
+							btn2.onclick = function() {
+								openModal(modal2);
+							};
+							btn3.onclick = function() {
+								openModal(modal3);
+							};
+
+							// Установка обработчиков событий для кнопок закрытия модальных окон
+							closeButtons1.forEach(function(button) {
+								button.onclick = function() {
+									closeModal(modal1);
+								};
+							});
+
+							closeButtons2.forEach(function(button) {
+								button.onclick = function() {
+									closeModal(modal2);
+								};
+							});
+
+							closeButtons3.forEach(function(button) {
+								button.onclick = function() {
+									closeModal(modal3);
+								};
+							});
+
+							// Установка обработчика события для клика вне модального окна
+							window.onclick = function(event) {
+								if (event.target.classList.contains('modal')) {
+									event.target.style.display = "none";
+								}
+							};
+
+						</script>
 					</div>
+				
+					<div class="zagolovok">
+						<h1>Способы оставление заявки  </h1>
+					</div>
+				
+				</div>
+				
 
 
-
-					<!--<form id="myForm"  action="#" method="post">
-						<div class="power__forma forma">
-							<div class="input__wrapper">
-								<input id="nameInput" class="power__input forma__input" type="text" placeholder="Имя" required>
-							</div>
-							<div class="input__wrapper">
-								<input id="emailInput" class="power__input forma__input" type="email" placeholder="Email" required>
-							</div>
-							<div class="input__wrapper">
-								<input id="phoneInput" class="power__input forma__input" type="tel" placeholder="Телефон" required>
-							</div>
-						</div>
-						<button id="submitButton" class="forma__button button" type="submit">Отправить</button>
-					</form>-->
-
+				
 					
 						
 					<ul class="power-available__list">
