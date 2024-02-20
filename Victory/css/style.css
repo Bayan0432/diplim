@@ -535,38 +535,53 @@ body{
 
 .yslygi{
 	display: block;
-
+	padding-bottom: 20%;
 
 }
 
 
 .katalog_yslug{
-	margin-top: 60px;
-    display: grid;
+	
+    display: flex;
     grid-template-columns: repeat(6, minmax(0, 210px));
     gap: 20px;
 
 }
 
+.content_yslug>h1{
+	font-size: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-weight: 700;
+}
+.content_yslug>p{
+	font-weight: 500;
+	font-size: 20px;
+
+}
+
+
+
 .yslygi>h1{
 	font-size: 50px;
 }
 
-.content_yslug{
-	position: relative;
-    overflow: hidden;
-    border: 5px solid ;
-    border-radius: 8px;
-    padding: 26px 25px 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    transition: border-color 0.3s ease, background 0.3s ease;
 
+	
 
-
-
+.bankrot{
+	
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 90%;
+    z-index: 2;
+    object-fit: contain;
+    transition: transform 200ms;
 }
+
+
+
 
 
 /*-------------------------------------*/
@@ -2087,4 +2102,6 @@ body{
     margin-right: 25px;
 	}
 }
+
+
 
