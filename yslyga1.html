@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Банкротство</title>
+	<style>
+		input {
+			width: 300px;
+			height: 50px;
+			display: block;
+			margin-bottom: 10px;
+		}
+
+		button {
+			width: 300px;
+			display: block;
+		}
+	</style>
+</head>
+<body>
+	<form action="word.php" method="POST" enctype="multipart/form-data">
+		<input type="text" name="name" placeholder="Введите ФИО">
+        <input type="text" name="adress" placeholder="Ваш адрес">
+		<input type="tel" name="tel" placeholder="Введите телефон" required>
+		<input type="text" name="gmail" placeholder="Ваша почта">
+        <input type="date" name="birth">
+		<input type="text" name="namesud" placeholder="Название суда">
+        <input type="text" name="adresssud" placeholder="Адрес суда">
+        <input type="text" name="cityindex" placeholder="Введите город,индекс">
+        <input type="text" name="namesudii" placeholder="Название судьи">
+        <input type="number" name="summadolga" placeholder="Укажите сумму долга">
+        <input type="text" name="creditori" placeholder="Укажите кредиторов">
+        <input type="text" name="istochnicdochoda" placeholder="Источник дохода">
+        <input type="text" name="nedvigimost" placeholder="Ваша недвижимость">
+        <input type="text" name="dvigimost" placeholder="Ваша движимость">
+        <textarea name="about" id="" cols="30" rows="10" placeholder="Прочая информация"></textarea>
+		<input type="file" name="file">
+		<button type="submit">Отправить</button>
+	</form>
+</body>
+</html>
